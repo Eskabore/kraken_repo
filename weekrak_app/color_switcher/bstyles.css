@@ -1,0 +1,158 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+
+/* Reactive font */
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    align-self: auto;
+    text-transform: capitalize;
+    font-size: 2rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
+.section {
+  padding: 5rem 0;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
+nav {
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: var(--dark-white);
+}
+
+.nav-links {
+  box-sizing: auto;
+}
+.nav-center {
+  width: 100vw;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  /*
+  <family-name> = <string> | <custom-ident>+
+  <generic-family> = serif | sans-serif | cursive | fantasy | monospace
+  */
+  font-family: 'Comic Sans MS', "Times New Roman", Georgia, serif;
+  font-size: 28px;
+  justify-content: space-between;
+  background-color: rgb(247, 144, 9);
+}
+
+.nav-center h4 {
+  margin-bottom: 0;
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.container h2{
+ background: var(--clr-black);
+ color: var(--clr-white);
+ padding: 1rem;
+ border-radius: var(--radius);
+ margin-bottom: 2.5rem;
+}
+
+.color {
+  color: var(--clr-primary-5);
+}
+
+
+
+
+
+
+.color {
+  color: blue;
+}
+
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+ text-align: center;
+}
+
+.container h2 {
+  background: var(--clr-black);
+  color: var(--clr-white);
+  padding: 1rem;;
+  border-radius: var(--radius);
+}
+
+.btn-hero {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--clr-black);
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: var(--transition);
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+.btn-hero:hover {
+  color: var(--clr-white);
+  background: var(--clr-black);
+}
+

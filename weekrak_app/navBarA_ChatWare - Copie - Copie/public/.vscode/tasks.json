@@ -6,5 +6,5 @@
     "windows":{
         "command": "F:\\Program Files\\Google\\Chrome Dev\\Application\\Chrome.exe"
     },
-    "args": ["localhost\\(D:\\DATA\\Programms\\XAMMP\\htdocs\\publicchat)\\(index.php)"]
+    "args": ["localhost\\(D:\\DATA\\Programms\\XAMMP\\htdocs\\publicchat)\\(index.html)"]
 }
